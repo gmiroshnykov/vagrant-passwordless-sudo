@@ -20,11 +20,9 @@ This script was inspired by and is based on Nick Muerdter's
 Usage
 -----
 
-```bash
-$ sudo ./vagrant-passwordless-sudo.sh
-Password:
-All done, vagrant should not ask for your sudo password anymore!
-```
+    $ sudo ./vagrant-passwordless-sudo.sh
+    Password:
+    All done, vagrant should not ask for your sudo password anymore!
 
 The following lines will be appended to your `/etc/sudoers`:
 
