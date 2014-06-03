@@ -30,7 +30,7 @@ $MARKER_BEGIN
 ###
 
 # NFS commands
-Cmnd_Alias VAGRANT_EXPORTS_ADD = $SHELL -c echo '*' >> /etc/exports
+Cmnd_Alias VAGRANT_EXPORTS_ADD = /usr/bin/tee -a /etc/exports
 Cmnd_Alias VAGRANT_NFSD_RESTART = /sbin/nfsd restart
 Cmnd_Alias VAGRANT_EXPORTS_REMOVE = /usr/bin/sed -E -e /*/ d -ibak /etc/exports
 %staff ALL=(root) NOPASSWD: VAGRANT_EXPORTS_ADD, VAGRANT_NFSD_RESTART, VAGRANT_EXPORTS_REMOVE
